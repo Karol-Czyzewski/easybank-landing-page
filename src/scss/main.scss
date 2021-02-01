@@ -1,6 +1,8 @@
 @import "~normalize.css";
 
 @import "_variables";
+@import "_mixins";
 
 //modules
+@import "modules/body";
 @import "modules/navigation";
