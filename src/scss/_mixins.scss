@@ -1,3 +1,14 @@
 @mixin container {
     margin: 0 64px;
 }
+
+@mixin buttonInvite {
+    background: linear-gradient(113deg, rgba(49,211,92,0.75) 37%, rgba(43,183,218,0.75) 85%);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    color: $white;
+    height: 38px;
+    width: 164px;
+    outline: none;
+}
