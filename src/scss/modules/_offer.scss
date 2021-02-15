@@ -1,0 +1,8 @@
+.offer {
+    background-color: $very-light-gray;
+    position: relative;
+
+    &__container{
+        @include container;
+    }
+}
