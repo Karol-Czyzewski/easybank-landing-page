@@ -2,7 +2,51 @@
     background-color: $very-light-gray;
     position: relative;
 
-    &__container{
+    &__container {
         @include container;
+    }
+
+    &__header {
+        padding-top: 100px;
+        margin-bottom: 50px;
+
+        &--title {
+            font-weight: 400;
+            font-size: 30px;
+        }
+
+        &--paragraph {
+            color: $grayish-blue;
+            font-weight: 300;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 12px;
+        padding-bottom: 50px;
+
+    }
+
+    &__card {
+
+        &--img {
+            height: 60px;
+        }
+
+        &--title {
+            font-weight: 400;
+        }
+
+        &--paragraph {
+            color: $grayish-blue;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 300;
+            width: 200px;
+        }
     }
 }
