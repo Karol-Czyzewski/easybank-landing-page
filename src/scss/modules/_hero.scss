@@ -1,0 +1,48 @@
+.hero {
+    // background-color: $very-light-gray;
+
+    &__container {
+        @include container;
+        display: flex;
+        height: 400px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content {
+        max-width: 400px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 40px;
+    }
+
+    &__paragraph {
+        color: $grayish-blue;
+        font-weight: 300;
+        line-height: 24px;
+        margin: 0;
+        margin-bottom: 28px;
+    }
+
+    &__button {
+        @include buttonInvite;
+    }
+
+    &__photo {
+
+        &--mockups {
+            width: 200px;
+        }
+
+        &--background {
+            background: url('../img/bg-intro-desktop.svg');
+            min-width: 700px;
+            min-height: 700px;
+            right: -200px;
+            z-index: -2;
+            top: -200px;
+        }
+    }
+}
