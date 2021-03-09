@@ -1,0 +1,67 @@
+.footer {
+    background-color: $dark-blue;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+
+    &__container {
+        @include container;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        // flex-direction: row;
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+
+        &--right {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &--left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        &--socials {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+    }
+
+    &__logo {
+
+    }
+
+    &__socials {
+        &--icon {
+            margin-right: 8px;
+        }
+    }
+
+    &__navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &--item {
+            color: $light-grayish-blue;
+            text-decoration: none;
+            padding: 12px;
+            margin-right: 24px;
+        }
+
+    }
+
+    &__button {
+        @include buttonInvite;
+    }
+
+    &__copyright {
+        color: $grayish-blue;
+        margin-bottom: 0;
+    }
+}
