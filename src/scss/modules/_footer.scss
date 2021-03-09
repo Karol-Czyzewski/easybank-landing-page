@@ -26,7 +26,7 @@
             align-items: flex-end;
         }
 
-        &--socials {
+        &--media {
             display: flex;
             justify-content: space-between;
             flex-direction: column;
@@ -39,7 +39,9 @@
 
     &__socials {
         &--icon {
-            margin-right: 8px;
+            margin-right: 14px;
+            width: 24px;
+            height: 24px;
         }
     }
 
