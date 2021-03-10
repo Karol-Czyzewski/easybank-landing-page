@@ -1,10 +1,12 @@
 .hero {
     // background-color: $very-light-gray;
+    overflow: hidden;
+    position: relative;
 
     &__container {
         @include container;
         display: flex;
-        height: 400px;
+        height: 600px;
         justify-content: space-between;
         align-items: center;
     }
@@ -31,18 +33,17 @@
     }
 
     &__photo {
-
         &--mockups {
-            width: 200px;
+            @include switchMockup;
+            position: absolute;
+            top: -150px;
         }
 
         &--background {
-            background: url('../img/bg-intro-desktop.svg');
-            min-width: 700px;
-            min-height: 700px;
-            right: -200px;
-            z-index: -2;
-            top: -200px;
+            @include switchBackground;
+            top: -250px;
+            position: absolute;
+            z-index: -999999;
         }
     }
 }

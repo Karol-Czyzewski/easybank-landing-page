@@ -3,24 +3,30 @@
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);
     position: relative;
+    z-index: 999999;
+
     &__container {
         @include container;
         align-items: center;
         display: flex;
         justify-content: space-between;
         height: 64px;
+        position: relative;
     }
+
     &__logo {
 
     }
     &__items {
 
     }
+
     &__item {
         color: $grayish-blue;
         text-decoration: none;
         margin: 0 12px;
     }
+
     &__button {
         @include buttonInvite;
     }

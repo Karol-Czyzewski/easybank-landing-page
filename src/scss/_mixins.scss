@@ -1,9 +1,17 @@
 @mixin container {
-    margin: 0 64px;
+    margin: 0 128px;
+
+    // @media(max-width: 1280px) {
+    //     margin: 0 64px;
+    // }
+
+    // @media(max-width: 1280px) {
+    //     margin: 0 32px;
+    // }
 }
 
 @mixin buttonInvite {
-    background: linear-gradient(113deg, rgba(49,211,92,0.75) 37%, rgba(43,183,218,0.75) 85%);
+    background: linear-gradient(to right, $lime-green, $bright-cygan);
     border-radius: 25px;
     border: none;
     cursor: pointer;
@@ -11,4 +19,13 @@
     height: 42px;
     width: 160px;
     outline: none;
+}
+
+@mixin switchMockup {
+    right: -130px;
+
+}
+
+@mixin switchBackground {
+    right: -450px;
 }

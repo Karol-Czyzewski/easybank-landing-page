@@ -1,6 +1,13 @@
 .offer {
     background-color: $very-light-gray;
     position: relative;
+    overflow: hidden;
+
+    &__mockups {
+        @include switchMockup;
+        position: absolute;
+        top: -750px;
+    }
 
     &__container {
         @include container;
