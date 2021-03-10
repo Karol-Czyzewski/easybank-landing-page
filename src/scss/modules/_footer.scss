@@ -7,10 +7,6 @@
 
     &__container {
         @include container;
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: center;
-        // flex-direction: row;
         display: grid;
         grid-template-columns: 1.3fr 0.7fr;
 
