@@ -3,10 +3,22 @@
     position: relative;
     overflow: hidden;
 
+    @media(max-width: $tablet) {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__mockups {
         @include switchMockup;
         position: absolute;
         top: -750px;
+
+        @media(max-width: $smallDesktop) {
+            display: none;
+        }
     }
 
     &__container {
@@ -16,6 +28,10 @@
     &__header {
         padding-top: 100px;
         margin-bottom: 50px;
+
+        @media(max-width: $tablet) {
+            padding-top: 50px;
+        }
 
         &--title {
             font-weight: 400;
@@ -34,7 +50,19 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 12px;
+        grid-row-gap: 12px;
         padding-bottom: 50px;
+
+        @media(max-width: $smallDesktop) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media(max-width: $tablet) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
     }
 
