@@ -13,6 +13,13 @@
         &--right {
             display: grid;
             grid-template-columns: 1fr 1fr;
+
+            @media(max-width: $smallDesktop) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
         }
 
         &--left {
@@ -20,11 +27,32 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-end;
+
+            @media(max-width: $smallDesktop) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
         }
 
         &--media {
             display: flex;
             justify-content: space-between;
+            flex-direction: column;
+
+            @media(max-width: $smallDesktop) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+
+        @media(max-width: $smallDesktop) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
         }
     }
@@ -38,6 +66,16 @@
             margin-right: 14px;
             width: 24px;
             height: 24px;
+
+            @media(max-width: $smallDesktop) {
+                margin-right: 0;
+                margin: 8px;
+            }
+        }
+
+        @media(max-width: $smallDesktop) {
+            margin-top: 24px;
+            margin-bottom: 24px;
         }
     }
 
@@ -50,12 +88,29 @@
             text-decoration: none;
             padding: 12px;
             margin-right: 24px;
+
+            @media(max-width: $smallDesktop) {
+                margin-right: 0;
+                margin: 2px;
+            }
+        }
+
+        @media(max-width: $smallDesktop) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
     }
 
     &__button {
         @include buttonInvite;
+
+        @media(max-width: $smallDesktop) {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
     }
 
     &__copyright {
