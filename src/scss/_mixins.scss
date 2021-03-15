@@ -1,13 +1,21 @@
 @mixin container {
-    margin: 0 128px;
+    margin: 0 112px;
 
-    // @media(max-width: 1280px) {
-    //     margin: 0 64px;
-    // }
+    @media(max-width: $mediumDesktop) {
+        margin: 0 32px;
+    }
 
-    // @media(max-width: 1280px) {
-    //     margin: 0 32px;
-    // }
+    @media(max-width: $smallDesktop) {
+        margin: 0 32px;
+    }
+
+    @media(max-width: $tablet) {
+        margin: 0 16px;
+    }
+
+    @media(max-width: $mobile) {
+        margin: 0 8px;
+    }
 }
 
 @mixin buttonInvite {
@@ -24,8 +32,15 @@
 @mixin switchMockup {
     right: -130px;
 
+    @media(max-width: $mediumDesktop) {
+        right: -250px;
+    }
 }
 
 @mixin switchBackground {
     right: -450px;
+
+    @media(max-width: $mediumDesktop) {
+        right: -615px;
+    }
 }
