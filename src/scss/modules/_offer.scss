@@ -14,7 +14,7 @@
     &__mockups {
         @include switchMockup;
         position: absolute;
-        top: -750px;
+        top: -700px;
 
         @media(max-width: $smallDesktop) {
             display: none;

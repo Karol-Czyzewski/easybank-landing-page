@@ -36,14 +36,22 @@
         &--mockups {
             @include switchMockup;
             position: absolute;
-            top: -150px;
+            top: -100px;
+
+            @media(max-width: $smallDesktop) {
+                display: none;
+            }
         }
 
         &--background {
             @include switchBackground;
-            top: -250px;
+            top: -200px;
             position: absolute;
             z-index: -999999;
+
+            @media(max-width: $smallDesktop) {
+                display: none;
+            }
         }
     }
 }
