@@ -6,18 +6,36 @@
     &__container {
         @include container;
         display: flex;
+        flex-direction: row;
         height: 600px;
-        justify-content: space-between;
+        // justify-content: space-between;
         align-items: center;
+
+        @media(max-width: $smallDesktop) {
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
     }
 
     &__content {
         max-width: 400px;
+
+        @media(max-width: $smallDesktop) {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__title {
         font-weight: 400;
         font-size: 40px;
+
+        @media(max-width: $smallDesktop) {
+            text-align: center;
+        }
     }
 
     &__paragraph {
@@ -26,21 +44,56 @@
         line-height: 24px;
         margin: 0;
         margin-bottom: 28px;
+
+        @media(max-width: $smallDesktop) {
+            text-align: center;
+        }
     }
 
     &__button {
         @include buttonInvite;
+
+        @media(max-width: $smallDesktop) {
+            margin: 24px;
+        }
+    }
+
+    &__photo-mobile {
+
+        &--background  {
+            display: none;
+
+            @media(max-width: $smallDesktop) {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        &--mockups {
+            display: none;
+
+            @media(max-width: $smallDesktop) {
+                display: block;
+                position: absolute;
+                left: 15px;
+                top: -30px;
+                width: 95%;
+                height: auto;
+            }
+        }
     }
 
     &__photo {
+        display: block;
+
+        @media(max-width: $smallDesktop) {
+            display: none;
+        }
+
         &--mockups {
             @include switchMockup;
             position: absolute;
             top: -100px;
-
-            @media(max-width: $smallDesktop) {
-                display: none;
-            }
         }
 
         &--background {
@@ -48,10 +101,6 @@
             top: -200px;
             position: absolute;
             z-index: -999999;
-
-            @media(max-width: $smallDesktop) {
-                display: none;
-            }
         }
     }
 }
