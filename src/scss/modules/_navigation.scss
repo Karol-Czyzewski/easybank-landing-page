@@ -19,7 +19,9 @@
 
     }
     &__items {
-
+        @media(max-width: $smallDesktop) {
+            display: none;
+        }
     }
 
     &__item {
@@ -30,5 +32,21 @@
 
     &__button {
         @include buttonInvite;
+
+        @media(max-width: $smallDesktop) {
+            display: none;
+        }
+    }
+
+    &__button-mobile {
+        display: none;
+        outline: none;
+
+        @media(max-width: $smallDesktop) {
+            cursor: pointer;
+            display: block;
+            background: none;
+            border: none;
+        }
     }
 }
