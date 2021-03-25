@@ -34,6 +34,12 @@
         margin-top: 10px;
         margin-bottom: 10px;
         text-decoration: none;
+        transition: color 200ms ease-in-out;
+
+        &:hover {
+            color: $green;
+            cursor: pointer;
+        }
     }
 }
 

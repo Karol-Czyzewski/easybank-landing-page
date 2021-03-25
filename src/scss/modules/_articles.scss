@@ -48,6 +48,15 @@
 
         &__content {
             padding: 24px;
+
+            &--title {
+                transition: color 200ms ease-in-out;
+
+                &:hover {
+                    color: $green;
+                    cursor: pointer;
+                }
+            }
         }
 
         &__photo {

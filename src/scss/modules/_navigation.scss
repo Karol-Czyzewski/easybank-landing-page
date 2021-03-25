@@ -28,6 +28,12 @@
         color: $grayish-blue;
         text-decoration: none;
         margin: 0 12px;
+        width: 100px;
+        transition: color 200ms ease-in-out;
+
+        &:hover {
+            color: $green;
+        }
     }
 
     &__button {

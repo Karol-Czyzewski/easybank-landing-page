@@ -62,15 +62,28 @@
     }
 
     &__socials {
+        margin-top: 14px;
+    }
+
+    &__social {
+        margin-right: 14px;
+
         &--icon {
-            margin-right: 14px;
             width: 24px;
             height: 24px;
+        }
 
-            @media(max-width: $smallDesktop) {
-                margin-right: 0;
-                margin: 8px;
-            }
+        svg path {
+            transition: fill 200ms ease-in-out;
+        }
+
+        &:hover svg path {
+            fill: $green;
+        }
+
+        @media(max-width: $smallDesktop) {
+            margin-right: 0;
+            margin: 8px;
         }
 
         @media(max-width: $smallDesktop) {
@@ -88,6 +101,11 @@
             text-decoration: none;
             padding: 12px;
             margin-right: 24px;
+            transition: color 200ms ease-in-out;
+
+            &:hover {
+                color: $green;
+            }
 
             @media(max-width: $smallDesktop) {
                 margin-right: 0;

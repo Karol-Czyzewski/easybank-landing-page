@@ -27,6 +27,10 @@
     height: 42px;
     width: 160px;
     outline: none;
+
+    &:hover {
+        background: linear-gradient(to right, #63f189, #60dcfc);
+    }
 }
 
 @mixin switchMockup {
